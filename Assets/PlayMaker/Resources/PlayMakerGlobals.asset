@@ -36,3 +36,4 @@ MonoBehaviour:
   - playerActionDown
   - playerActionLeft
   - playerActionRight
+  - timing/oneSecondTicker
