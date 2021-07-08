@@ -15,7 +15,13 @@ MonoBehaviour:
   variables:
     floatVariables: []
     intVariables: []
-    boolVariables: []
+    boolVariables:
+    - useVariable: 1
+      name: isGlobalSoundOn
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 1
     stringVariables: []
     vector2Variables: []
     vector3Variables: []
@@ -30,7 +36,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 
+    variableCategoryIDs: 00000000
   events:
   - playerActionUp
   - playerActionDown
@@ -40,3 +46,4 @@ MonoBehaviour:
   - spawner/getNextAsteroid
   - Scene loader/Application quit
   - Scene loader/Start game
+  - Main menu/Sound toggle
