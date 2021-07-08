@@ -37,3 +37,4 @@ MonoBehaviour:
   - playerActionLeft
   - playerActionRight
   - timing/oneSecondTicker
+  - spawner/getNextAsteroid
