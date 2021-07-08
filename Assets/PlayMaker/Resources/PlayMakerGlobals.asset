@@ -38,3 +38,5 @@ MonoBehaviour:
   - playerActionRight
   - timing/oneSecondTicker
   - spawner/getNextAsteroid
+  - Scene loader/Application quit
+  - Scene loader/Start game
