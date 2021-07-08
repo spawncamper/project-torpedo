@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1219815696, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: level asteroid spawn 2
+  m_Name: level asteroid spawn 3
   m_EditorClassIdentifier: 
   category: 
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
-    name: raycast2
+    name: spawn asteroid 3
     startState: OnStart
     states:
     - name: OnStart
@@ -24,8 +24,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 64
-        y: 118
+        x: 61
+        y: 116
         width: 100
         height: 16
       isBreakpoint: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 302
-        y: 164
+        x: 266.4453
+        y: 163.67188
         width: 128.4
         height: 48
       isBreakpoint: 0
@@ -177,8 +177,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 270
-        y: 236
+        x: 234.44531
+        y: 235.67188
         width: 120.4
         height: 32
       isBreakpoint: 0
@@ -257,8 +257,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 424
-        y: 236
+        x: 388.4453
+        y: 235.67188
         width: 114.8
         height: 32
       isBreakpoint: 0
@@ -337,8 +337,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 267
-        y: 291
+        x: 231.44531
+        y: 290.67188
         width: 118
         height: 32
       isBreakpoint: 0
@@ -415,8 +415,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 428
-        y: 287
+        x: 392.4453
+        y: 286.67188
         width: 104.4
         height: 16
       isBreakpoint: 0
@@ -455,7 +455,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: spawn asteroid 2
+          value: spawn asteroid 3
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -499,8 +499,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 281
-        y: 111
+        x: 245.44531
+        y: 110.671875
         width: 190.8
         height: 32
       isBreakpoint: 0
@@ -572,8 +572,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 276
-        y: 346
+        x: 240.44531
+        y: 345.67188
         width: 102
         height: 16
       isBreakpoint: 0
@@ -612,7 +612,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: raycast 2
+          value: raycast 3
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -652,9 +652,6 @@ MonoBehaviour:
         paramDataPos: 00000000000000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000
     events:
-    - name: timing/oneSecondTicker
-      isSystemEvent: 0
-      isGlobal: 1
     - name: bool test/true
       isSystemEvent: 0
       isGlobal: 0
@@ -664,6 +661,9 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: timing/oneSecondTicker
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: timing/oneSecondTicker

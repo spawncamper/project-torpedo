@@ -10,22 +10,124 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1219815696, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: level raycast on spawn
+  m_Name: level raycast2 row0
   m_EditorClassIdentifier: 
   category: 
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 11400000}
-    name: raycast
+    name: raycast 2
     startState: get pos
     states:
+    - name: get pos
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 98.5
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: raycast
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetPosition
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 5552ad05
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: position/z
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 0000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c0000000f0000000f0000000f0000000700000001000000
+        paramName:
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        paramDataPos: 00000000000000000000000001000000020000000000000004000000
+        paramByteDataSize: 00000000000000000000000000000000000000000400000001000000
     - name: raycast
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 57.960938
-        y: 158.60938
+        x: 51.960938
+        y: 156.10938
         width: 144.4
         height: 32
       isBreakpoint: 0
@@ -213,8 +315,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 94.359375
-        y: 212.86719
+        x: 88.359375
+        y: 210.36719
         width: 100
         height: 32
       isBreakpoint: 0
@@ -262,7 +364,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: spawn asteroid 2
+          value: spawn asteroid 3
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -301,115 +403,13 @@ MonoBehaviour:
         - resetOnExit
         paramDataPos: 00000000000000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000
-    - name: get pos
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 56
-        y: 101
-        width: 100
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: raycast
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.GetPosition
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 5552ad05
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: position/z
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params:
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams: []
-        byteData: 0000000000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f0000000700000001000000
-        paramName:
-        - gameObject
-        - vector
-        - x
-        - y
-        - z
-        - space
-        - everyFrame
-        paramDataPos: 00000000000000000000000001000000020000000000000004000000
-        paramByteDataSize: 00000000000000000000000000000000000000000400000001000000
     - name: disable raycast
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 102
-        y: 276
+        x: 96
+        y: 273.5
         width: 130
         height: 16
       isBreakpoint: 0
@@ -448,7 +448,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: raycast
+          value: raycast 2
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -488,11 +488,14 @@ MonoBehaviour:
         paramDataPos: 00000000000000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000
     events:
-    - name: raycast/hitEvent
+    - name: timing/oneSecondTicker
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: FINISHED
       isSystemEvent: 1
+      isGlobal: 0
+    - name: raycast/hitEvent
+      isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
     variables:
