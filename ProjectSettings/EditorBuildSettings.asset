@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/core scene/PT08 Core Boot scene.unity
+    guid: d994bea05e0bb284891d536be6eba77d
+  - enabled: 1
+    path: Assets/Scenes/level scene/PT08 Level 01 ver2 scene.unity
+    guid: e16bed4f80144ec4fa65b665edc6c9ab
+  - enabled: 1
+    path: Assets/Scenes/player scene/PT08 Player scene.unity
+    guid: 38b9ebe19600a5b40bb2f3104145e3ad
   m_configObjects: {}
