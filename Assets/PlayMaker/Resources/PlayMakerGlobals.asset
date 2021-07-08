@@ -42,7 +42,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000
+    variableCategoryIDs: 000000000000000000000000
   events:
   - playerActionUp
   - playerActionDown
@@ -56,3 +56,4 @@ MonoBehaviour:
   - Main menu/Player smooth movement
   - Main menu/Start game button
   - Player/Esc press
+  - Main menu/Asteroid smooth movement
