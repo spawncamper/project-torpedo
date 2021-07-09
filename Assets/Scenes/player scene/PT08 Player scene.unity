@@ -5045,9 +5045,6 @@ MonoBehaviour:
     - name: playerActionDown
       isSystemEvent: 0
       isGlobal: 1
-    - name: raycast/hitEvent
-      isSystemEvent: 0
-      isGlobal: 0
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
@@ -5060,30 +5057,12 @@ MonoBehaviour:
     - name: Greater Than
       isSystemEvent: 0
       isGlobal: 0
-    - name: timing/oneSecondTicker
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: 1
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: 2
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: 3
-      isSystemEvent: 0
-      isGlobal: 0
     - name: playerActionLeft
       isSystemEvent: 0
       isGlobal: 1
     - name: playerActionRight
       isSystemEvent: 0
       isGlobal: 1
-    - name: 4
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: 5
-      isSystemEvent: 0
-      isGlobal: 0
     globalTransitions:
     - fsmEvent:
         name: playerActionUp
@@ -5358,7 +5337,7 @@ MonoBehaviour:
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: 1
+          name: int/1
           isSystemEvent: 0
           isGlobal: 0
         toState: Asteroid collision
@@ -5418,7 +5397,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 1
+        - int/1
         byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
@@ -5516,7 +5495,7 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: 1
+    - name: int/1
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -6940,7 +6919,7 @@ MonoBehaviour:
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: 1
+          name: int/1
           isSystemEvent: 0
           isGlobal: 0
         toState: int comp up
@@ -6949,7 +6928,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: 2
+          name: int/2
           isSystemEvent: 0
           isGlobal: 0
         toState: int comp down
@@ -6958,7 +6937,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: 3
+          name: int/3
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -6967,7 +6946,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: 4
+          name: int/4
           isSystemEvent: 0
           isGlobal: 0
         toState: int comp left
@@ -6976,7 +6955,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: 5
+          name: int/5
           isSystemEvent: 0
           isGlobal: 0
         toState: int comp right
@@ -7052,11 +7031,11 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
+        - int/1
+        - int/2
+        - int/3
+        - int/4
+        - int/5
         byteData: 00
         arrayParamSizes: 0500000005000000
         arrayParamTypes:
@@ -8277,9 +8256,6 @@ MonoBehaviour:
     - name: playerActionDown
       isSystemEvent: 0
       isGlobal: 1
-    - name: raycast/hitEvent
-      isSystemEvent: 0
-      isGlobal: 0
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
@@ -8295,25 +8271,25 @@ MonoBehaviour:
     - name: timing/oneSecondTicker
       isSystemEvent: 0
       isGlobal: 1
-    - name: 1
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: 2
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: 3
-      isSystemEvent: 0
-      isGlobal: 0
     - name: playerActionLeft
       isSystemEvent: 0
       isGlobal: 1
     - name: playerActionRight
       isSystemEvent: 0
       isGlobal: 1
-    - name: 4
+    - name: int/1
       isSystemEvent: 0
       isGlobal: 0
-    - name: 5
+    - name: int/2
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: int/3
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: int/4
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: int/5
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:

@@ -4081,7 +4081,7 @@ MonoBehaviour:
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: 1
+          name: int/1
           isSystemEvent: 0
           isGlobal: 0
         toState: State 3
@@ -4141,7 +4141,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 1
+        - int/1
         byteData: 00000000
         arrayParamSizes: 
         arrayParamTypes: []
@@ -4248,7 +4248,7 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: 1
+    - name: int/1
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
