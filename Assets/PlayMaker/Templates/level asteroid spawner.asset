@@ -305,16 +305,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 289
-        y: 182
-        width: 119.6
+        x: 288
+        y: 176
+        width: 206
         height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: get asteroid
@@ -323,7 +323,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Less Than
+          name: Comparison/Less Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get asteroid
@@ -332,7 +332,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Greater Than
+          name: Comparison/Greater Than
           isSystemEvent: 0
           isGlobal: 0
         toState: finished
@@ -384,9 +384,9 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
-        - Less Than
-        - Greater Than
+        - Comparison/Equal
+        - Comparison/Less Than
+        - Comparison/Greater Than
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -1115,18 +1115,18 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: Equal
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Less Than
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Greater Than
-      isSystemEvent: 0
-      isGlobal: 0
     - name: spawner/getNextAsteroid
       isSystemEvent: 0
       isGlobal: 1
+    - name: Comparison/Equal
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Comparison/Less Than
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Comparison/Greater Than
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions:
     - fsmEvent:
         name: timing/oneSecondTicker

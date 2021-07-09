@@ -5590,7 +5590,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Equal
+          name: int/1
           isSystemEvent: 0
           isGlobal: 0
         toState: done
@@ -5651,7 +5651,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
-        - Equal
+        - int/1
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
@@ -5856,7 +5856,7 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: Equal
+    - name: int/1
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []

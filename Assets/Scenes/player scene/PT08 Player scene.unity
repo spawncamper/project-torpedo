@@ -2634,16 +2634,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 494.21094
-        y: 201.5
-        width: 106.8
+        x: 448
+        y: 176
+        width: 182.8
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -2652,7 +2652,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Less Than
+          name: Comparison/Less Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos
@@ -2704,8 +2704,8 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
-        - Less Than
+        - Comparison/Equal
+        - Comparison/Less Than
         - 
         byteData: 00
         arrayParamSizes: 
@@ -2727,16 +2727,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 483.60938
-        y: 279.5
-        width: 126
+        x: 416
+        y: 288
+        width: 206
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -2745,7 +2745,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Greater Than
+          name: Comparison/Greater Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos 2
@@ -2797,9 +2797,9 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
+        - Comparison/Equal
         - 
-        - Greater Than
+        - Comparison/Greater Than
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -3693,8 +3693,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 265.85938
-        y: 127.78125
+        x: 256
+        y: 192
         width: 132.4
         height: 32
       isBreakpoint: 0
@@ -3771,8 +3771,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 253.19531
-        y: 223.86719
+        x: 208
+        y: 288
         width: 151.6
         height: 32
       isBreakpoint: 0
@@ -3918,8 +3918,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 252.57812
-        y: 370.90625
+        x: 192
+        y: 384
         width: 141.2
         height: 32
       isBreakpoint: 0
@@ -3996,8 +3996,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 242.90625
-        y: 477.21094
+        x: 176
+        y: 480
         width: 150
         height: 32
       isBreakpoint: 0
@@ -4143,16 +4143,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 470.54688
-        y: 388.40625
-        width: 119.6
+        x: 416
+        y: 384
+        width: 206
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -4161,7 +4161,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Greater Than
+          name: Comparison/Greater Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos 3
@@ -4213,9 +4213,9 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
+        - Comparison/Equal
         - 
-        - Greater Than
+        - Comparison/Greater Than
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -4236,16 +4236,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 469.46094
-        y: 471.77344
-        width: 122.8
+        x: 432
+        y: 464
+        width: 182.8
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -4254,7 +4254,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Less Than
+          name: Comparison/Less Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos 4
@@ -4306,8 +4306,8 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
-        - Less Than
+        - Comparison/Equal
+        - Comparison/Less Than
         - 
         byteData: 00
         arrayParamSizes: 
@@ -5060,21 +5060,21 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: Equal
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Less Than
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Greater Than
-      isSystemEvent: 0
-      isGlobal: 0
     - name: playerActionLeft
       isSystemEvent: 0
       isGlobal: 1
     - name: playerActionRight
       isSystemEvent: 0
       isGlobal: 1
+    - name: Comparison/Equal
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Comparison/Greater Than
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Comparison/Less Than
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions:
     - fsmEvent:
         name: playerActionUp
@@ -6036,16 +6036,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 494.21094
-        y: 345.5
-        width: 106.8
+        x: 448
+        y: 320
+        width: 182.8
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -6054,7 +6054,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Less Than
+          name: Comparison/Less Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos
@@ -6106,8 +6106,8 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
-        - Less Than
+        - Comparison/Equal
+        - Comparison/Less Than
         - 
         byteData: 00
         arrayParamSizes: 
@@ -6129,16 +6129,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 483.60938
-        y: 423.5
-        width: 126
+        x: 400
+        y: 416
+        width: 206
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -6147,7 +6147,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Greater Than
+          name: Comparison/Greater Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos 2
@@ -6199,9 +6199,9 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
+        - Comparison/Equal
         - 
-        - Greater Than
+        - Comparison/Greater Than
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -7665,16 +7665,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 470.54688
-        y: 532.40625
-        width: 119.6
+        x: 400
+        y: 560
+        width: 206
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -7683,7 +7683,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Greater Than
+          name: Comparison/Greater Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos 3
@@ -7735,9 +7735,9 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
+        - Comparison/Equal
         - 
-        - Greater Than
+        - Comparison/Greater Than
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -7758,16 +7758,16 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 469.46094
-        y: 615.77344
-        width: 122.8
+        x: 384
+        y: 640
+        width: 182.8
         height: 48
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: Equal
+          name: Comparison/Equal
           isSystemEvent: 0
           isGlobal: 0
         toState: Finished
@@ -7776,7 +7776,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Less Than
+          name: Comparison/Less Than
           isSystemEvent: 0
           isGlobal: 0
         toState: get pos 4
@@ -7828,8 +7828,8 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Equal
-        - Less Than
+        - Comparison/Equal
+        - Comparison/Less Than
         - 
         byteData: 00
         arrayParamSizes: 
@@ -8582,15 +8582,6 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: Equal
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Less Than
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: Greater Than
-      isSystemEvent: 0
-      isGlobal: 0
     - name: timing/oneSecondTicker
       isSystemEvent: 0
       isGlobal: 1
@@ -8613,6 +8604,15 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 0
     - name: int/5
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Comparison/Equal
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Comparison/Less Than
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Comparison/Greater Than
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions:
@@ -10399,8 +10399,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 192
-        y: 160
+        x: 64
+        y: 112
         width: 100
         height: 48
       isBreakpoint: 0
@@ -10417,7 +10417,7 @@ MonoBehaviour:
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Equal
+          name: int/1
           isSystemEvent: 0
           isGlobal: 0
         toState: done
@@ -10478,7 +10478,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
-        - Equal
+        - int/1
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
@@ -10498,8 +10498,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 188
-        y: 230
+        x: 76
+        y: 198
         width: 100
         height: 32
       isBreakpoint: 0
@@ -10600,8 +10600,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 410
-        y: 198
+        x: 298
+        y: 166
         width: 100
         height: 16
       isBreakpoint: 0
@@ -10683,7 +10683,7 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: Equal
+    - name: int/1
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -11373,11 +11373,20 @@ MonoBehaviour:
         x: 400
         y: 224
         width: 115.6
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: index compare
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.IntOperator
@@ -11442,6 +11451,58 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000001000000000000000200000004000000
         paramByteDataSize: 0000000000000000040000000000000001000000
+    - name: index compare
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 400
+        y: 272
+        width: 126.8
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: Player/RemoveLife
       isSystemEvent: 0
