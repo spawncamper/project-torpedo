@@ -62,10 +62,6 @@ MonoBehaviour:
     - 
     variableCategoryIDs: 000000000000000000000000000000000000000000000000
   events:
-  - playerActionUp
-  - playerActionDown
-  - playerActionLeft
-  - playerActionRight
   - timing/oneSecondTicker
   - spawner/getNextAsteroid
   - Scene loader/Application quit
@@ -81,3 +77,12 @@ MonoBehaviour:
   - Player/NoMoreLives
   - Menu/Death menu/Restart button
   - Menu/Death menu/Exit button
+  - Menu/How to play menu/Back button
+  - Menu/Main menu/How to play button
+  - Menu/Main menu/Credits button
+  - Menu/Credits menu/Back button
+  - Sound/UI/UIClickEvent
+  - Player/Rewired/ActionUp
+  - Player/Rewired/ActionDown
+  - Player/Rewired/ActionLeft
+  - Player/Rewired/ActionRight

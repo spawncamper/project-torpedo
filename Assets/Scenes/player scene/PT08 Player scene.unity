@@ -1037,6 +1037,107 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &834528979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 834528980}
+  - component: {fileID: 834528981}
+  - component: {fileID: 834528982}
+  m_Layer: 0
+  m_Name: Laser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &834528980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834528979}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1009738076}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &834528981
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834528979}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c981497cc8876b34184e6c16eab38bf6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &834528982
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834528979}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 474517393
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.92, y: 1.92}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &864335562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,6 +1392,15 @@ MonoBehaviour:
       _behaviorId: 0
       _userAssignable: 1
       _categoryId: 0
+    - _id: 5
+      _name: actionFireLaser
+      _type: 1
+      _descriptiveName: Action0
+      _positiveDescriptiveName: 
+      _negativeDescriptiveName: 
+      _behaviorId: 0
+      _userAssignable: 1
+      _categoryId: 2
     actionCategories:
     - _name: Default
       _descriptiveName: Default
@@ -1302,12 +1412,19 @@ MonoBehaviour:
       _tag: 
       _id: 1
       _userAssignable: 1
+    - _name: combat
+      _descriptiveName: Category0
+      _tag: 
+      _id: 2
+      _userAssignable: 1
     actionCategoryMap:
       list:
       - categoryId: 0
         actionIds: 04000000
       - categoryId: 1
         actionIds: 00000000010000000200000003000000
+      - categoryId: 2
+        actionIds: 05000000
     inputBehaviors:
     - _id: 0
       _name: Default
@@ -1464,14 +1581,36 @@ MonoBehaviour:
         _modifierKey1: 0
         _modifierKey2: 0
         _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 5
+        _elementType: 1
+        _elementIdentifierId: -1
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 32
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
+      - _actionCategoryId: 0
+        _actionId: 5
+        _elementType: 1
+        _elementIdentifierId: -1
+        _axisRange: 0
+        _invert: 0
+        _axisContribution: 0
+        _keyboardKeyCode: 306
+        _modifierKey1: 0
+        _modifierKey2: 0
+        _modifierKey3: 0
     mouseMaps: []
     customControllerMaps: []
     customControllers: []
     controllerMapLayoutManagerRuleSets: []
     controllerMapEnablerRuleSets: []
     playerIdCounter: 2
-    actionIdCounter: 5
-    actionCategoryIdCounter: 2
+    actionIdCounter: 6
+    actionCategoryIdCounter: 3
     inputBehaviorIdCounter: 1
     mapCategoryIdCounter: 1
     joystickLayoutIdCounter: 1
@@ -3305,6 +3444,7 @@ GameObject:
   - component: {fileID: 1009738083}
   - component: {fileID: 1009738084}
   - component: {fileID: 1009738085}
+  - component: {fileID: 1009738086}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3325,6 +3465,7 @@ Transform:
   m_Children:
   - {fileID: 1002126330}
   - {fileID: 759751704}
+  - {fileID: 834528980}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4538,9 +4679,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 256
-        y: 192
-        width: 132.4
+        x: 224
+        y: 176
+        width: 204.4
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -4616,9 +4757,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 208
-        y: 288
-        width: 151.6
+        x: 192
+        y: 272
+        width: 223.6
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -4765,7 +4906,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 192
         y: 384
-        width: 141.2
+        width: 213.2
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -4843,7 +4984,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 176
         y: 480
-        width: 150
+        width: 222
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -5896,21 +6037,9 @@ MonoBehaviour:
         paramDataPos: 000000000000000000000000010000000000000004000000
         paramByteDataSize: 000000000000000000000000000000000400000001000000
     events:
-    - name: playerActionUp
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: playerActionDown
-      isSystemEvent: 0
-      isGlobal: 1
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: playerActionLeft
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: playerActionRight
-      isSystemEvent: 0
-      isGlobal: 1
     - name: Comparison/Equal
       isSystemEvent: 0
       isGlobal: 0
@@ -5920,9 +6049,21 @@ MonoBehaviour:
     - name: Comparison/Less Than
       isSystemEvent: 0
       isGlobal: 0
+    - name: Player/Rewired/ActionUp
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Player/Rewired/ActionDown
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Player/Rewired/ActionLeft
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Player/Rewired/ActionRight
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
-        name: playerActionUp
+        name: Player/Rewired/ActionUp
         isSystemEvent: 0
         isGlobal: 1
       toState: State 1
@@ -5931,7 +6072,7 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: playerActionDown
+        name: Player/Rewired/ActionDown
         isSystemEvent: 0
         isGlobal: 1
       toState: State 2
@@ -5940,7 +6081,7 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: playerActionLeft
+        name: Player/Rewired/ActionLeft
         isSystemEvent: 0
         isGlobal: 1
       toState: State 4
@@ -5949,7 +6090,7 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: playerActionRight
+        name: Player/Rewired/ActionRight
         isSystemEvent: 0
         isGlobal: 1
       toState: State 5
@@ -6803,7 +6944,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 65.05469
+        x: 81.05469
         y: 244.95312
         width: 122
         height: 32
@@ -6881,7 +7022,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 448
+        x: 464
         y: 320
         width: 182.8
         height: 48
@@ -6974,7 +7115,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 400
+        x: 416
         y: 416
         width: 206
         height: 48
@@ -7067,7 +7208,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 731.71875
+        x: 747.71875
         y: 762.2969
         width: 100
         height: 16
@@ -7119,7 +7260,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 867.9297
+        x: 883.9297
         y: 332.42188
         width: 100
         height: 32
@@ -7205,7 +7346,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 57.367188
+        x: 73.36719
         y: 302.28125
         width: 125.2
         height: 32
@@ -7300,7 +7441,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1230.1484
+        x: 1246.1484
         y: 357.60156
         width: 100
         height: 32
@@ -7386,7 +7527,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 881.0547
+        x: 897.0547
         y: 431.3828
         width: 104.4
         height: 32
@@ -7472,7 +7613,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1034.4062
+        x: 1050.4062
         y: 339.9922
         width: 124.4
         height: 32
@@ -7568,7 +7709,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1027.9297
+        x: 1043.9297
         y: 442.1953
         width: 128.4
         height: 32
@@ -7664,7 +7805,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1235.7891
+        x: 1251.7891
         y: 447.2422
         width: 100
         height: 32
@@ -7750,7 +7891,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 698.65625
+        x: 714.65625
         y: 333.3125
         width: 100
         height: 32
@@ -7845,7 +7986,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 693.40625
+        x: 709.40625
         y: 424.08594
         width: 100
         height: 32
@@ -7940,9 +8081,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 179.17969
-        y: 133.4375
-        width: 132.4
+        x: 64
+        y: 128
+        width: 204.4
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -8009,9 +8150,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 361.51562
-        y: 139.52344
-        width: 151.6
+        x: 320
+        y: 128
+        width: 223.6
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -8078,7 +8219,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 246.24219
+        x: 262.2422
         y: 218.6875
         width: 190.8
         height: 96
@@ -8234,7 +8375,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1452.2969
+        x: 1468.2969
         y: 548.71875
         width: 100
         height: 16
@@ -8303,9 +8444,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 565.1328
+        x: 581.1328
         y: 98.24219
-        width: 141.2
+        width: 213.2
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -8372,9 +8513,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 578.4375
+        x: 594.4375
         y: 198.28906
-        width: 150
+        width: 222
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -8441,7 +8582,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 64.84375
+        x: 80.84375
         y: 354.53906
         width: 110.8
         height: 16
@@ -8510,7 +8651,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 400
+        x: 416
         y: 560
         width: 206
         height: 48
@@ -8603,7 +8744,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 384
+        x: 400
         y: 640
         width: 182.8
         height: 48
@@ -8696,7 +8837,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 859.3906
+        x: 875.3906
         y: 589.7422
         width: 125.2
         height: 32
@@ -8782,7 +8923,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1066.0391
+        x: 1082.0391
         y: 591.96875
         width: 100
         height: 32
@@ -8878,7 +9019,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1273.4609
+        x: 1289.4609
         y: 593.03906
         width: 100
         height: 32
@@ -8964,7 +9105,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 887.4297
+        x: 903.4297
         y: 670.3281
         width: 112.4
         height: 32
@@ -9050,7 +9191,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1091.6406
+        x: 1107.6406
         y: 676.7969
         width: 100
         height: 32
@@ -9146,7 +9287,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1280.2188
+        x: 1296.2188
         y: 679.5469
         width: 102.8
         height: 32
@@ -9232,7 +9373,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 696.8672
+        x: 712.8672
         y: 576.8594
         width: 100
         height: 32
@@ -9327,7 +9468,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 720.9297
+        x: 736.9297
         y: 670.375
         width: 100
         height: 32
@@ -9418,22 +9559,10 @@ MonoBehaviour:
         paramDataPos: 000000000000000000000000010000000000000004000000
         paramByteDataSize: 000000000000000000000000000000000400000001000000
     events:
-    - name: playerActionUp
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: playerActionDown
-      isSystemEvent: 0
-      isGlobal: 1
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
     - name: timing/oneSecondTicker
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: playerActionLeft
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: playerActionRight
       isSystemEvent: 0
       isGlobal: 1
     - name: int/1
@@ -9460,25 +9589,19 @@ MonoBehaviour:
     - name: Comparison/Greater Than
       isSystemEvent: 0
       isGlobal: 0
+    - name: Player/Rewired/ActionUp
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Player/Rewired/ActionDown
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Player/Rewired/ActionLeft
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Player/Rewired/ActionRight
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
-    - fsmEvent:
-        name: playerActionUp
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: State 1
-      linkStyle: 0
-      linkConstraint: 0
-      linkTarget: 0
-      colorIndex: 0
-    - fsmEvent:
-        name: playerActionDown
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: State 2
-      linkStyle: 0
-      linkConstraint: 0
-      linkTarget: 0
-      colorIndex: 0
     - fsmEvent:
         name: timing/oneSecondTicker
         isSystemEvent: 0
@@ -9489,7 +9612,25 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: playerActionLeft
+        name: Player/Rewired/ActionUp
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 1
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Player/Rewired/ActionDown
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Player/Rewired/ActionLeft
         isSystemEvent: 0
         isGlobal: 1
       toState: State 4
@@ -9498,7 +9639,7 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: playerActionRight
+        name: Player/Rewired/ActionRight
         isSystemEvent: 0
         isGlobal: 1
       toState: State 5
@@ -10078,45 +10219,45 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 240
-        y: 116
-        width: 151.6
+        x: 176
+        y: 112
+        width: 223.6
         height: 80
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
       - fsmEvent:
-          name: playerActionUp
+          name: Player/Rewired/ActionUp
           isSystemEvent: 0
-          isGlobal: 1
+          isGlobal: 0
         toState: action up
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: playerActionDown
+          name: Player/Rewired/ActionDown
           isSystemEvent: 0
-          isGlobal: 1
+          isGlobal: 0
         toState: action down
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: playerActionLeft
+          name: Player/Rewired/ActionLeft
           isSystemEvent: 0
-          isGlobal: 1
+          isGlobal: 0
         toState: action left
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: playerActionRight
+          name: Player/Rewired/ActionRight
           isSystemEvent: 0
-          isGlobal: 1
+          isGlobal: 0
         toState: action right
         linkStyle: 0
         linkConstraint: 0
@@ -10128,15 +10269,17 @@ MonoBehaviour:
         - Rewired.Integration.PlayMaker.RewiredPlayerGetButtonDown
         - Rewired.Integration.PlayMaker.RewiredPlayerGetButtonDown
         - Rewired.Integration.PlayMaker.RewiredPlayerGetButtonDown
+        - Rewired.Integration.PlayMaker.RewiredPlayerGetButtonDown
         customNames:
         - 
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 01010101
-        actionStartIndex: 00000000070000000e00000015000000
-        actionHashCodes: b9d24e00b9d24e00b9d24e00b9d24e00
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 00000000070000000e000000150000001c000000
+        actionHashCodes: b9d24e00b9d24e00b9d24e00b9d24e00b9d24e00
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -10171,12 +10314,24 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: actionRight
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: actionFireLaser
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -10226,30 +10381,39 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - playerActionUp
+        - Player/Rewired/ActionUp
         - 
         - 
-        - playerActionDown
+        - Player/Rewired/ActionDown
         - 
         - 
-        - playerActionLeft
+        - Player/Rewired/ActionLeft
         - 
         - 
-        - playerActionRight
+        - Player/Rewired/ActionRight
         - 
         - 
-        byteData: 01010101
+        - Player/Rewired/actionFireLaser
+        - 
+        - 
+        byteData: 0101010101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 11000000170000001700000017000000120000001000000001000000110000001700000017000000170000001200000010000000010000001100000017000000170000001700000012000000100000000100000011000000170000001700000017000000120000001000000001000000
+        paramDataType: 1100000017000000170000001700000012000000100000000100000011000000170000001700000017000000120000001000000001000000110000001700000017000000170000001200000010000000010000001100000017000000170000001700000012000000100000000100000011000000170000001700000017000000120000001000000001000000
         paramName:
         - storeValue
         - isTrueEvent
@@ -10279,8 +10443,15 @@ MonoBehaviour:
         - actionName
         - playerId
         - everyFrame
-        paramDataPos: 00000000000000000100000002000000000000000000000000000000010000000300000004000000050000000100000001000000010000000200000006000000070000000800000002000000020000000200000003000000090000000a0000000b000000030000000300000003000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+        - storeValue
+        - isTrueEvent
+        - isFalseEvent
+        - valueChangedEvent
+        - actionName
+        - playerId
+        - everyFrame
+        paramDataPos: 00000000000000000100000002000000000000000000000000000000010000000300000004000000050000000100000001000000010000000200000006000000070000000800000002000000020000000200000003000000090000000a0000000b000000030000000300000003000000040000000c0000000d0000000e000000040000000400000004000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: action up
       description: 
       colorIndex: 0
@@ -10373,7 +10544,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - playerActionUp
+        - Player/Rewired/ActionUp
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -10479,7 +10650,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - playerActionDown
+        - Player/Rewired/ActionDown
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -10585,7 +10756,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - playerActionLeft
+        - Player/Rewired/ActionLeft
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -10691,7 +10862,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - playerActionRight
+        - Player/Rewired/ActionRight
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -10709,16 +10880,19 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: playerActionUp
+    - name: Player/Rewired/actionFireLaser
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Player/Rewired/ActionUp
       isSystemEvent: 0
       isGlobal: 1
-    - name: playerActionDown
+    - name: Player/Rewired/ActionDown
       isSystemEvent: 0
       isGlobal: 1
-    - name: playerActionLeft
+    - name: Player/Rewired/ActionLeft
       isSystemEvent: 0
       isGlobal: 1
-    - name: playerActionRight
+    - name: Player/Rewired/ActionRight
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions: []
@@ -10969,6 +11143,144 @@ MonoBehaviour:
       linkConstraint: 0
       linkTarget: 0
       colorIndex: 0
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+      arrayVariables: []
+      enumVariables: []
+      categories:
+      - 
+      variableCategoryIDs: 
+    description: 
+    docUrl: 
+    showStateLabel: 0
+    maxLoopCount: 0
+    watermark: 
+    password: 
+    locked: 0
+    manualUpdate: 0
+    outVariableIndices: 
+    keepDelayedEventsOnStateExit: 0
+    preprocessed: 0
+    ExposedEvents: []
+    OutputEvents: []
+    RestartOnEnable: 1
+    ResetVariablesOnEnable: 0
+    EnableDebugFlow: 0
+    EnableBreakpoints: 1
+    editorFlags: 225
+    activeStateName: 
+    mouseEvents: 0
+    handleLevelLoaded: 0
+    handleTriggerEnter2D: 0
+    handleTriggerExit2D: 0
+    handleTriggerStay2D: 0
+    handleCollisionEnter2D: 0
+    handleCollisionExit2D: 0
+    handleCollisionStay2D: 0
+    handleTriggerEnter: 0
+    handleTriggerExit: 0
+    handleTriggerStay: 0
+    handleCollisionEnter: 0
+    handleCollisionExit: 0
+    handleCollisionStay: 0
+    handleParticleCollision: 0
+    handleControllerColliderHit: 0
+    handleJointBreak: 0
+    handleJointBreak2D: 0
+    handleOnGUI: 0
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
+    handleApplicationEvents: 0
+    handleUiEvents: 0
+    handleLegacyNetworking: 0
+    handleAnimatorMove: 0
+    handleAnimatorIK: 0
+  fsmTemplate: {fileID: 0}
+  eventHandlerComponentsAdded: 0
+--- !u!114 &1009738086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009738075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    dataVersion: 2
+    usedInTemplate: {fileID: 0}
+    name: laser
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events: []
+    globalTransitions: []
     variables:
       floatVariables: []
       intVariables: []
