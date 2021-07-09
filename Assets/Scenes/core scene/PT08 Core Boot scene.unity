@@ -261,7 +261,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 241
         y: 111
-        width: 234.8
+        width: 278
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -747,9 +747,6 @@ MonoBehaviour:
         paramDataPos: 0000000000000000010000000000000001000000
         paramByteDataSize: 0000000000000000000000000100000001000000
     events:
-    - name: Main menu/Start game button
-      isSystemEvent: 0
-      isGlobal: 1
     - name: Player/Esc press
       isSystemEvent: 0
       isGlobal: 1
@@ -765,16 +762,13 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: Menu/Main menu/Start game button
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Menu/Main menu/Exit game button
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions:
-    - fsmEvent:
-        name: Main menu/Start game button
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: State 2
-      linkStyle: 0
-      linkConstraint: 0
-      linkTarget: 0
-      colorIndex: 0
     - fsmEvent:
         name: Player/Esc press
         isSystemEvent: 0
@@ -807,6 +801,15 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: State 5
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Menu/Main menu/Start game button
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
@@ -11316,8 +11319,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 64.078125
-        y: 100.15625
+        x: 64
+        y: 112
         width: 100
         height: 32
       isBreakpoint: 0
@@ -11377,8 +11380,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 176
-        y: 160
+        x: 128
+        y: 176
         width: 325.2
         height: 112
       isBreakpoint: 0
@@ -11406,7 +11409,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Menu/Main menu/Start game button
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: play sound 2
         linkStyle: 0
         linkConstraint: 0
@@ -11424,14 +11427,14 @@ MonoBehaviour:
       - fsmEvent:
           name: Menu/Main menu/Player smooth movement
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: play sound 5
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
         colorIndex: 0
       - fsmEvent:
-          name: Main menu/Sound toggle
+          name: Menu/Main menu/Sound toggle
           isSystemEvent: 0
           isGlobal: 1
         toState: play sound 6
@@ -11773,8 +11776,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 720
-        y: 224
+        x: 752
+        y: 256
         width: 126.8
         height: 32
       isBreakpoint: 0
@@ -11879,8 +11882,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 736
-        y: 80
+        x: 768
+        y: 112
         width: 106.8
         height: 32
       isBreakpoint: 0
@@ -11985,8 +11988,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 720
-        y: 320
+        x: 752
+        y: 352
         width: 132.4
         height: 32
       isBreakpoint: 0
@@ -12091,8 +12094,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 736
-        y: 272
+        x: 768
+        y: 304
         width: 116.4
         height: 32
       isBreakpoint: 0
@@ -12197,8 +12200,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 736
-        y: 128
+        x: 768
+        y: 160
         width: 106.8
         height: 32
       isBreakpoint: 0
@@ -12303,8 +12306,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 736
-        y: 176
+        x: 768
+        y: 208
         width: 100
         height: 32
       isBreakpoint: 0
@@ -12409,8 +12412,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 579
-        y: 67
+        x: 611
+        y: 99
         width: 113.2
         height: 32
       isBreakpoint: 0
@@ -12515,8 +12518,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 592
-        y: 128
+        x: 624
+        y: 160
         width: 113.2
         height: 32
       isBreakpoint: 0
@@ -12621,8 +12624,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 592
-        y: 176
+        x: 624
+        y: 208
         width: 113.2
         height: 32
       isBreakpoint: 0
@@ -12727,8 +12730,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 592
-        y: 224
+        x: 624
+        y: 256
         width: 113.2
         height: 32
       isBreakpoint: 0
@@ -12833,8 +12836,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 592
-        y: 272
+        x: 624
+        y: 304
         width: 113.2
         height: 32
       isBreakpoint: 0
@@ -12939,8 +12942,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 592
-        y: 320
+        x: 624
+        y: 352
         width: 113.2
         height: 32
       isBreakpoint: 0
@@ -13045,9 +13048,6 @@ MonoBehaviour:
       isSystemEvent: 1
       isGlobal: 0
     - name: Scene loader/Application quit
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: Main menu/Sound toggle
       isSystemEvent: 0
       isGlobal: 1
     - name: Menu/Main menu/How to play button

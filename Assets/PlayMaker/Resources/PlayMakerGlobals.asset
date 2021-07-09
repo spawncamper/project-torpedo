@@ -66,8 +66,6 @@ MonoBehaviour:
   - spawner/getNextAsteroid
   - Scene loader/Application quit
   - Scene loader/Start game
-  - Main menu/Sound toggle
-  - Main menu/Start game button
   - Player/Esc press
   - Sound/asteroid_collision
   - Sound/PlaySound
