@@ -28,7 +28,19 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 1
-    stringVariables: []
+    stringVariables:
+    - useVariable: 1
+      name: scene/Level 01 scene
+      tooltip: 
+      showInInspector: 1
+      networkSync: 0
+      value: PT08 Level 01 ver2 scene
+    - useVariable: 1
+      name: scene/Player scene
+      tooltip: 
+      showInInspector: 1
+      networkSync: 0
+      value: PT08 Player scene
     vector2Variables: []
     vector3Variables: []
     colorVariables: []
@@ -48,7 +60,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000
+    variableCategoryIDs: 000000000000000000000000000000000000000000000000
   events:
   - playerActionUp
   - playerActionDown
@@ -67,3 +79,5 @@ MonoBehaviour:
   - Sound/PlaySound
   - Player/RemoveLife
   - Player/NoMoreLives
+  - Menu/Death menu/Restart button
+  - Menu/Death menu/Exit button
