@@ -67,10 +67,8 @@ MonoBehaviour:
   - Scene loader/Application quit
   - Scene loader/Start game
   - Main menu/Sound toggle
-  - Main menu/Player smooth movement
   - Main menu/Start game button
   - Player/Esc press
-  - Main menu/Asteroid smooth movement
   - Sound/asteroid_collision
   - Sound/PlaySound
   - Player/RemoveLife
@@ -86,3 +84,6 @@ MonoBehaviour:
   - Player/Rewired/ActionDown
   - Player/Rewired/ActionLeft
   - Player/Rewired/ActionRight
+  - Menu/Main menu/Start game button
+  - Menu/Main menu/Player smooth movement
+  - Menu/Main menu/Sound toggle

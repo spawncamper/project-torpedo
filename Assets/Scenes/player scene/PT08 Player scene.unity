@@ -10230,7 +10230,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Player/Rewired/ActionUp
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: action up
         linkStyle: 0
         linkConstraint: 0
@@ -10239,7 +10239,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Player/Rewired/ActionDown
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: action down
         linkStyle: 0
         linkConstraint: 0
@@ -10248,7 +10248,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Player/Rewired/ActionLeft
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: action left
         linkStyle: 0
         linkConstraint: 0
@@ -10257,7 +10257,7 @@ MonoBehaviour:
       - fsmEvent:
           name: Player/Rewired/ActionRight
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: action right
         linkStyle: 0
         linkConstraint: 0

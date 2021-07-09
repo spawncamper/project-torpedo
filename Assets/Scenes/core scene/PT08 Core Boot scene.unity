@@ -4741,7 +4741,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 216
         y: 100
-        width: 282
+        width: 325.2
         height: 48
       isBreakpoint: 0
       isSequence: 0
@@ -4957,18 +4957,18 @@ MonoBehaviour:
         paramDataPos: 000000000100000000000000
         paramByteDataSize: 000000000000000001000000
     events:
-    - name: Main menu/Player smooth movement
-      isSystemEvent: 0
-      isGlobal: 1
     - name: bool test/true
       isSystemEvent: 0
       isGlobal: 0
     - name: bool test/false
       isSystemEvent: 0
       isGlobal: 0
+    - name: Menu/Main menu/Player smooth movement
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
-        name: Main menu/Player smooth movement
+        name: Menu/Main menu/Player smooth movement
         isSystemEvent: 0
         isGlobal: 1
       toState: State 2
@@ -10764,7 +10764,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 254
         y: 110
-        width: 195.6
+        width: 238.8
         height: 48
       isBreakpoint: 0
       isSequence: 0
@@ -10980,18 +10980,18 @@ MonoBehaviour:
         paramDataPos: 000000000100000000000000
         paramByteDataSize: 000000000000000001000000
     events:
-    - name: Main menu/Sound toggle
-      isSystemEvent: 0
-      isGlobal: 1
     - name: bool test/true
       isSystemEvent: 0
       isGlobal: 0
     - name: bool test/false
       isSystemEvent: 0
       isGlobal: 0
+    - name: Menu/Main menu/Sound toggle
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
-        name: Main menu/Sound toggle
+        name: Menu/Main menu/Sound toggle
         isSystemEvent: 0
         isGlobal: 1
       toState: State 2
@@ -11377,50 +11377,14 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 224
-        y: 176
-        width: 282
+        x: 176
+        y: 160
+        width: 325.2
         height: 112
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
       transitions:
-      - fsmEvent:
-          name: Main menu/Player smooth movement
-          isSystemEvent: 0
-          isGlobal: 1
-        toState: play sound 5
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: Main menu/Start game button
-          isSystemEvent: 0
-          isGlobal: 1
-        toState: play sound 2
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: Main menu/Exit game button
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: play sound 7
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: Main menu/Sound toggle
-          isSystemEvent: 0
-          isGlobal: 1
-        toState: play sound 6
-        linkStyle: 0
-        linkConstraint: 0
-        linkTarget: 0
-        colorIndex: 0
       - fsmEvent:
           name: Menu/Main menu/How to play button
           isSystemEvent: 0
@@ -11435,6 +11399,42 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 1
         toState: play sound 4
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Menu/Main menu/Start game button
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: play sound 2
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Menu/Main menu/Exit game button
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: play sound 7
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Menu/Main menu/Player smooth movement
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: play sound 5
+        linkStyle: 0
+        linkConstraint: 0
+        linkTarget: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: Main menu/Sound toggle
+          isSystemEvent: 0
+          isGlobal: 1
+        toState: play sound 6
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -11733,12 +11733,12 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Main menu/Start game button
+        - Menu/Main menu/Start game button
         - Menu/Main menu/How to play button
         - Menu/Main menu/Credits button
-        - Main menu/Exit game button
-        - Main menu/Player smooth movement
-        - Main menu/Sound toggle
+        - Menu/Main menu/Exit game button
+        - Menu/Main menu/Player smooth movement
+        - Menu/Main menu/Sound toggle
         byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
@@ -11860,7 +11860,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Main menu/Player smooth movement
+        - Menu/Main menu/Player smooth movement
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -11966,7 +11966,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Main menu/Start game button
+        - Menu/Main menu/Start game button
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -12178,7 +12178,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Main menu/Sound toggle
+        - Menu/Main menu/Sound toggle
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -13044,15 +13044,6 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
-    - name: Main menu/Player smooth movement
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: Main menu/Start game button
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: Main menu/Exit game button
-      isSystemEvent: 0
-      isGlobal: 0
     - name: Scene loader/Application quit
       isSystemEvent: 0
       isGlobal: 1
@@ -13066,6 +13057,18 @@ MonoBehaviour:
       isSystemEvent: 0
       isGlobal: 1
     - name: Sound/UI/UIClickEvent
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Menu/Main menu/Start game button
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Menu/Main menu/Exit game button
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: Menu/Main menu/Player smooth movement
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: Menu/Main menu/Sound toggle
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions: []
@@ -13171,7 +13174,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 132
+        y: 148
         width: 100
         height: 16
       isBreakpoint: 0
@@ -13222,8 +13225,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 451
-        y: 109
+        x: 496
+        y: 112
         width: 225.2
         height: 16
       isBreakpoint: 0
@@ -13319,9 +13322,9 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 722
-        y: 109
-        width: 234.8
+        x: 768
+        y: 112
+        width: 278
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -13438,7 +13441,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Scene loader/Start game
-        - Main menu/Start game button
+        - Menu/Main menu/Start game button
         byteData: 0000
         arrayParamSizes: 
         arrayParamTypes: []
@@ -13462,8 +13465,8 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 220.71875
-        y: 117.05469
-        width: 195.6
+        y: 133.05469
+        width: 238.8
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -13539,7 +13542,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Main menu/Sound toggle
+        - Menu/Main menu/Sound toggle
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -13559,8 +13562,8 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 464
-        y: 257.0078
-        width: 282
+        y: 273.0078
+        width: 325.2
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -13636,104 +13639,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Main menu/Player smooth movement
-        byteData: 00
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 1f000000170000000f00000001000000
-        paramName:
-        - eventTarget
-        - sendEvent
-        - delay
-        - everyFrame
-        paramDataPos: 00000000000000000000000000000000
-        paramByteDataSize: 00000000000000000000000001000000
-    - name: State 6
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 121.5
-        y: 256.5
-        width: 297.2
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.SendEvent
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 5e69bb04
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams:
-        - target: 1
-          excludeSelf:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          gameObject:
-            ownerOption: 1
-            gameObject:
-              useVariable: 0
-              name: 
-              tooltip: 
-              showInInspector: 0
-              networkSync: 0
-              value: {fileID: 561284359}
-          fsmName:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          sendToChildren:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          fsmComponent: {fileID: 0}
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        fsmArrayParams: []
-        fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        fsmIntParams: []
-        fsmBoolParams: []
-        fsmVector2Params: []
-        fsmVector3Params: []
-        fsmColorParams: []
-        fsmRectParams: []
-        fsmQuaternionParams: []
-        stringParams:
-        - Main menu/Asteroid smooth movement
+        - Menu/Main menu/Player smooth movement
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -13754,16 +13660,13 @@ MonoBehaviour:
     - name: Scene loader/Start game
       isSystemEvent: 0
       isGlobal: 1
-    - name: Main menu/Sound toggle
+    - name: Menu/Main menu/Sound toggle
       isSystemEvent: 0
       isGlobal: 1
-    - name: Main menu/Player smooth movement
+    - name: Menu/Main menu/Start game button
       isSystemEvent: 0
       isGlobal: 1
-    - name: Main menu/Start game button
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: Main menu/Asteroid smooth movement
+    - name: Menu/Main menu/Player smooth movement
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions:
@@ -13777,7 +13680,7 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: Main menu/Sound toggle
+        name: Menu/Main menu/Sound toggle
         isSystemEvent: 0
         isGlobal: 1
       toState: State 4
@@ -13786,7 +13689,7 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: Main menu/Start game button
+        name: Menu/Main menu/Start game button
         isSystemEvent: 0
         isGlobal: 1
       toState: State 3
@@ -13795,19 +13698,10 @@ MonoBehaviour:
       linkTarget: 0
       colorIndex: 0
     - fsmEvent:
-        name: Main menu/Player smooth movement
+        name: Menu/Main menu/Player smooth movement
         isSystemEvent: 0
         isGlobal: 1
       toState: State 5
-      linkStyle: 0
-      linkConstraint: 0
-      linkTarget: 0
-      colorIndex: 0
-    - fsmEvent:
-        name: Main menu/Asteroid smooth movement
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: State 6
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
