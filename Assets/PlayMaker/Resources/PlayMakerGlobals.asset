@@ -63,3 +63,6 @@ MonoBehaviour:
   - Main menu/Start game button
   - Player/Esc press
   - Main menu/Asteroid smooth movement
+  - Sound/asteroid_collision
+  - Sound/PlaySound
+  - Player/RemoveLife
