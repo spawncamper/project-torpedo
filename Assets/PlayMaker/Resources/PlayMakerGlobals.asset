@@ -66,3 +66,4 @@ MonoBehaviour:
   - Sound/asteroid_collision
   - Sound/PlaySound
   - Player/RemoveLife
+  - Player/NoMoreLives
