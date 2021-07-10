@@ -1832,7 +1832,7 @@ GameObject:
   - component: {fileID: 84674166}
   - component: {fileID: 84674168}
   m_Layer: 5
-  m_Name: Button 2
+  m_Name: Level 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6487,7 +6487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Random asteroids level
+  m_text: Basic level with random asteroids
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6514,8 +6514,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8071,7 +8071,7 @@ GameObject:
   - component: {fileID: 1172104677}
   - component: {fileID: 1172104679}
   m_Layer: 5
-  m_Name: Button 4
+  m_Name: Level 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8189,7 +8189,7 @@ GameObject:
   - component: {fileID: 1186804548}
   - component: {fileID: 1186804550}
   m_Layer: 5
-  m_Name: Button 1
+  m_Name: Level 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8686,7 +8686,7 @@ GameObject:
   - component: {fileID: 1348475297}
   - component: {fileID: 1348475299}
   m_Layer: 5
-  m_Name: Button 3
+  m_Name: Level 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
