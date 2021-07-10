@@ -114,3 +114,4 @@ MonoBehaviour:
   - Sound/Player/movementSound
   - Menu/Level selector menu/Level 01
   - Player/Rewired/ActionFireLaser
+  - Sound/Player/LaserShot
