@@ -13560,15 +13560,15 @@ MonoBehaviour:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
     name: player control selector
-    startState: State 1
+    startState: bool test
     states:
-    - name: State 1
+    - name: bool test
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 129
-        y: 104
+        y: 120
         width: 128.4
         height: 48
       isBreakpoint: 0
@@ -13579,7 +13579,7 @@ MonoBehaviour:
           name: bool test/true
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 2
+        toState: 'turn on instant '
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -13588,7 +13588,7 @@ MonoBehaviour:
           name: bool test/false
           isSystemEvent: 0
           isGlobal: 0
-        toState: State 3
+        toState: turn on per sec
         linkStyle: 0
         linkConstraint: 0
         linkTarget: 0
@@ -13646,14 +13646,14 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000100000000000000
         paramByteDataSize: 00000000000000000000000001000000
-    - name: State 2
+    - name: 'turn on instant '
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 65
-        y: 195
-        width: 100
+        y: 211
+        width: 134
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -13730,14 +13730,14 @@ MonoBehaviour:
         - resetOnExit
         paramDataPos: 00000000000000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000
-    - name: State 3
+    - name: turn on per sec
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 218
-        y: 197
-        width: 100
+        y: 213
+        width: 130.8
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -13814,6 +13814,58 @@ MonoBehaviour:
         - resetOnExit
         paramDataPos: 00000000000000000000000001000000
         paramByteDataSize: 00000000000000000000000000000000
+    - name: controls off
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 416
+        y: 112
+        width: 166.8
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        fsmArrayParams: []
+        fsmEnumParams: []
+        fsmFloatParams: []
+        fsmIntParams: []
+        fsmBoolParams: []
+        fsmVector2Params: []
+        fsmVector3Params: []
+        fsmColorParams: []
+        fsmRectParams: []
+        fsmQuaternionParams: []
+        stringParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: bool test/true
       isSystemEvent: 0
@@ -13821,7 +13873,22 @@ MonoBehaviour:
     - name: bool test/false
       isSystemEvent: 0
       isGlobal: 0
-    globalTransitions: []
+    - name: Player/NoMoreLives
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions:
+    - fsmEvent:
+        name: Player/NoMoreLives
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: controls off
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
     variables:
       floatVariables: []
       intVariables: []
