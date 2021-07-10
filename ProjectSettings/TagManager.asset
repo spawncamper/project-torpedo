@@ -50,17 +50,17 @@ TagManager:
   - name: Player
     uniqueID: 2120762683
     locked: 0
-  - name: row0
-    uniqueID: 1623828879
-    locked: 0
-  - name: row1
-    uniqueID: 4221649057
+  - name: row3
+    uniqueID: 1051703863
     locked: 0
   - name: row2
     uniqueID: 506461977
     locked: 0
-  - name: row3
-    uniqueID: 1051703863
+  - name: row1
+    uniqueID: 4221649057
+    locked: 0
+  - name: row0
+    uniqueID: 1623828879
     locked: 0
   - name: Foreground
     uniqueID: 474517393
