@@ -93,4 +93,4 @@ MonoBehaviour:
   - Menu/Main menu/Sound toggle
   - Player/depth
   - Score/scoreOnDeath
-  - Score/NewHighScore
+  - Sound/Player/movementSound
