@@ -7896,7 +7896,7 @@ MonoBehaviour:
           value: 0
         fsmIntParams:
         - useVariable: 1
-          name: 
+          name: player/position/depth
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -7988,7 +7988,7 @@ MonoBehaviour:
         fsmFloatParams: []
         fsmIntParams:
         - useVariable: 1
-          name: 
+          name: player/position/depth
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -8081,7 +8081,7 @@ MonoBehaviour:
         fsmFloatParams: []
         fsmIntParams:
         - useVariable: 1
-          name: 
+          name: player/position/depth
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -8470,7 +8470,7 @@ MonoBehaviour:
           value: 0
         fsmIntParams:
         - useVariable: 1
-          name: 
+          name: player/position/depth
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -8482,7 +8482,7 @@ MonoBehaviour:
           networkSync: 0
           value: -1
         - useVariable: 1
-          name: 
+          name: player/position/depth
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -8866,7 +8866,7 @@ MonoBehaviour:
           value: 0
         fsmIntParams:
         - useVariable: 1
-          name: 
+          name: player/position/depth
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -8878,7 +8878,7 @@ MonoBehaviour:
           networkSync: 0
           value: 1
         - useVariable: 1
-          name: 
+          name: player/position/depth
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -13714,7 +13714,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -13807,7 +13807,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -13908,7 +13908,7 @@ MonoBehaviour:
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams:
-        - target: 0
+        - target: 1
           excludeSelf:
             useVariable: 0
             name: 
