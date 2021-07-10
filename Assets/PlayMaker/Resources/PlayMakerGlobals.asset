@@ -27,6 +27,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: scene/Current level index
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     boolVariables:
     - useVariable: 1
       name: isGlobalSoundOn
@@ -53,6 +59,12 @@ MonoBehaviour:
       showInInspector: 1
       networkSync: 0
       value: PT08 Player scene
+    - useVariable: 1
+      name: scene/Current level name
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
     vector2Variables: []
     vector3Variables: []
     colorVariables: []
@@ -72,7 +84,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - timing/oneSecondTicker
   - spawner/getNextAsteroid
@@ -100,3 +112,4 @@ MonoBehaviour:
   - Player/depth
   - Score/scoreOnDeath
   - Sound/Player/movementSound
+  - Menu/Level selector menu/Level 01

@@ -14091,8 +14091,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
+        x: 64
+        y: 112
         width: 100
         height: 32
       isBreakpoint: 0
@@ -14152,8 +14152,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 176
-        y: 112
+        x: 272
+        y: 160
         width: 223.6
         height: 80
       isBreakpoint: 0
@@ -14390,8 +14390,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 503
-        y: 50
+        x: 688
+        y: 80
         width: 100
         height: 32
       isBreakpoint: 0
@@ -14496,8 +14496,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 502
-        y: 105
+        x: 688
+        y: 144
         width: 109.2
         height: 32
       isBreakpoint: 0
@@ -14602,8 +14602,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 507
-        y: 163
+        x: 688
+        y: 208
         width: 100
         height: 32
       isBreakpoint: 0
@@ -14708,8 +14708,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 504
-        y: 222
+        x: 688
+        y: 272
         width: 106
         height: 32
       isBreakpoint: 0
