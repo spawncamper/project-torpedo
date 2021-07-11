@@ -74,6 +74,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: {r: 0.6627451, g: 0.14117648, b: 0.12156863, a: 0.23529412}
+    - useVariable: 1
+      name: Color/Circles/Backrow/Highlighted
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {r: 0.09567462, g: 0.4716981, b: 0.43776378, a: 0.23529412}
     rectVariables: []
     quaternionVariables: []
     gameObjectVariables:
@@ -90,7 +96,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - timing/oneSecondTicker
   - spawner/getNextAsteroid
