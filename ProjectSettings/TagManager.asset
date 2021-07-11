@@ -7,6 +7,8 @@ TagManager:
   - ObjPool
   - LevelBoundary
   - Asteroid
+  - Laser
+  - Circle
   layers:
   - Default
   - TransparentFX
