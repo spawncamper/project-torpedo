@@ -128,3 +128,5 @@ MonoBehaviour:
   - Player/Rewired/ActionFireLaser
   - Sound/Player/LaserShot
   - Player/Laser/FireEvent
+  - Sound/Level/Asteroid_exploding
+  - Sound/Player/Asteroid_Collision

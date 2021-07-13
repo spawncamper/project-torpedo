@@ -724,7 +724,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 0.1
         fsmIntParams: []
         fsmBoolParams:
         - useVariable: 0
@@ -2617,7 +2617,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
-        actionEnabled: 00
+        actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
         actionHashCodes: 5e69bb04
@@ -2682,7 +2682,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Sound/asteroid_collision
+        - Sound/Level/Asteroid_exploding
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -3158,10 +3158,7 @@ MonoBehaviour:
     - name: int/1
       isSystemEvent: 0
       isGlobal: 0
-    - name: Sound/asteroid_collision
-      isSystemEvent: 0
-      isGlobal: 1
-    - name: Player/RemoveLife
+    - name: Sound/Level/Asteroid_exploding
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions: []
