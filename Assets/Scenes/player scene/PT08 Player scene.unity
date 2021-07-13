@@ -380,7 +380,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 116
+        y: 132
         width: 100
         height: 16
       isBreakpoint: 0
@@ -432,8 +432,8 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 192
-        y: 112
-        width: 190.8
+        y: 128
+        width: 250.8
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -518,7 +518,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 240
-        y: 208
+        y: 224
         width: 100
         height: 16
       isBreakpoint: 0
@@ -706,7 +706,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 240
-        y: 160
+        y: 176
         width: 100
         height: 32
       isBreakpoint: 0
@@ -792,9 +792,21 @@ MonoBehaviour:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: Sound/Level/Asteroid_exploding
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
         name: timing/oneSecondTicker
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Sound/Level/Asteroid_exploding
         isSystemEvent: 0
         isGlobal: 1
       toState: State 2
@@ -2624,9 +2636,9 @@ MonoBehaviour:
         - useVariable: 1
           name: float/laser/TimeOut
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: 0
+          value: 0.4
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -9993,7 +10005,7 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - Sound/asteroid_collision
+        - Sound/Player/Asteroid_Collision
         byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
@@ -10213,10 +10225,10 @@ MonoBehaviour:
     - name: int/1
       isSystemEvent: 0
       isGlobal: 0
-    - name: Sound/asteroid_collision
+    - name: Player/RemoveLife
       isSystemEvent: 0
       isGlobal: 1
-    - name: Player/RemoveLife
+    - name: Sound/Player/Asteroid_Collision
       isSystemEvent: 0
       isGlobal: 1
     globalTransitions: []
@@ -21164,7 +21176,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -21367,7 +21379,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0
+          value: 1
         - useVariable: 0
           name: 
           tooltip: 
@@ -21720,8 +21732,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 471
-        y: 114
+        x: 432
+        y: 112
         width: 100
         height: 16
       isBreakpoint: 0

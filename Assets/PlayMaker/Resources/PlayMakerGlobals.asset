@@ -103,7 +103,6 @@ MonoBehaviour:
   - Scene loader/Application quit
   - Scene loader/Start game
   - Player/Esc press
-  - Sound/asteroid_collision
   - Sound/PlaySound
   - Player/RemoveLife
   - Player/NoMoreLives

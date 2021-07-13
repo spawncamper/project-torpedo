@@ -12432,7 +12432,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 288
         y: 112
-        width: 193.2
+        width: 248.4
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -14286,9 +14286,6 @@ MonoBehaviour:
         paramDataPos: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000020000000000000000000000000000000100000001000000
         paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000
     events:
-    - name: Sound/asteroid_collision
-      isSystemEvent: 0
-      isGlobal: 1
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
@@ -14319,16 +14316,10 @@ MonoBehaviour:
     - name: Sound/Level/Asteroid_exploding
       isSystemEvent: 0
       isGlobal: 1
+    - name: Sound/Player/Asteroid_Collision
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
-    - fsmEvent:
-        name: Sound/asteroid_collision
-        isSystemEvent: 0
-        isGlobal: 1
-      toState: State 2
-      linkStyle: 0
-      linkConstraint: 0
-      linkTarget: 0
-      colorIndex: 0
     - fsmEvent:
         name: Sound/UI/UIClickEvent
         isSystemEvent: 0
@@ -14361,6 +14352,15 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: State 11
+      linkStyle: 0
+      linkConstraint: 0
+      linkTarget: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: Sound/Player/Asteroid_Collision
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: State 2
       linkStyle: 0
       linkConstraint: 0
       linkTarget: 0
