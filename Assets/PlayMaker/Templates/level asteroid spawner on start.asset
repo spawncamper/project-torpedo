@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1219815696, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: level asteroid spawner
+  m_Name: level asteroid spawner on start
   m_EditorClassIdentifier: 
   category: 
   fsm:
@@ -121,7 +121,7 @@ MonoBehaviour:
         serializedVersion: 2
         x: 336
         y: 128
-        width: 190.8
+        width: 166.8
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -1127,9 +1127,12 @@ MonoBehaviour:
     - name: Comparison/Greater Than
       isSystemEvent: 0
       isGlobal: 0
+    - name: timing/halfSecTicker
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions:
     - fsmEvent:
-        name: timing/oneSecondTicker
+        name: timing/halfSecTicker
         isSystemEvent: 0
         isGlobal: 1
       toState: rand int
