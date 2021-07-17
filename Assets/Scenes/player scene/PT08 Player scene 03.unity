@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 210313323}
   - component: {fileID: 210313325}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6574,7 +6574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009738075}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.94, y: -6.73, z: -0.16451332}
+  m_LocalPosition: {x: 2.74, y: -5.76, z: -0.16451332}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 1002126330}
@@ -6657,7 +6657,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 112
         width: 122
         height: 32
       isBreakpoint: 0
@@ -6735,7 +6735,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 592
-        y: 240
+        y: 224
         width: 182.8
         height: 48
       isBreakpoint: 0
@@ -6828,7 +6828,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 576
-        y: 352
+        y: 336
         width: 206
         height: 48
       isBreakpoint: 0
@@ -6921,7 +6921,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 891.71875
-        y: 682.2969
+        y: 666.2969
         width: 100
         height: 16
       isBreakpoint: 0
@@ -6973,7 +6973,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1027.9297
-        y: 252.42188
+        y: 236.42188
         width: 121.2
         height: 32
       isBreakpoint: 0
@@ -7059,7 +7059,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 64
-        y: 176
+        y: 160
         width: 125.2
         height: 32
       isBreakpoint: 0
@@ -7154,7 +7154,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1424
-        y: 256
+        y: 240
         width: 100
         height: 32
       isBreakpoint: 0
@@ -7240,7 +7240,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1040
-        y: 352
+        y: 336
         width: 129.2
         height: 32
       isBreakpoint: 0
@@ -7326,7 +7326,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1216
-        y: 256
+        y: 240
         width: 124.4
         height: 32
       isBreakpoint: 0
@@ -7505,7 +7505,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1232
-        y: 352
+        y: 336
         width: 128.4
         height: 32
       isBreakpoint: 0
@@ -7684,7 +7684,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1424
-        y: 352
+        y: 336
         width: 100
         height: 32
       isBreakpoint: 0
@@ -7770,7 +7770,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 858.65625
-        y: 253.3125
+        y: 237.3125
         width: 100
         height: 32
       isBreakpoint: 0
@@ -7865,7 +7865,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 853.40625
-        y: 344.08594
+        y: 328.08594
         width: 100
         height: 32
       isBreakpoint: 0
@@ -7960,7 +7960,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 272
-        y: 224
+        y: 208
         width: 204.4
         height: 32
       isBreakpoint: 0
@@ -8037,8 +8037,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 272
-        y: 336
+        x: 256
+        y: 320
         width: 223.6
         height: 32
       isBreakpoint: 0
@@ -8116,7 +8116,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1612.2969
-        y: 468.71875
+        y: 452.71875
         width: 100
         height: 32
       isBreakpoint: 0
@@ -8193,8 +8193,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 256
-        y: 432
+        x: 272
+        y: 416
         width: 213.2
         height: 32
       isBreakpoint: 0
@@ -8271,8 +8271,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 256
-        y: 528
+        x: 272
+        y: 512
         width: 222
         height: 32
       isBreakpoint: 0
@@ -8350,7 +8350,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 64
-        y: 224
+        y: 208
         width: 110.8
         height: 16
       isBreakpoint: 0
@@ -8464,7 +8464,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 576
-        y: 448
+        y: 432
         width: 206
         height: 48
       isBreakpoint: 0
@@ -8557,7 +8557,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 592
-        y: 544
+        y: 528
         width: 182.8
         height: 48
       isBreakpoint: 0
@@ -8618,7 +8618,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 3
+          value: 1
         fsmBoolParams: []
         fsmVector2Params: []
         fsmVector3Params: []
@@ -8649,8 +8649,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1019.3906
-        y: 509.7422
+        x: 1040
+        y: 448
         width: 125.2
         height: 32
       isBreakpoint: 0
@@ -8735,8 +8735,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1226.0391
-        y: 511.96875
+        x: 1248
+        y: 448
         width: 100
         height: 32
       isBreakpoint: 0
@@ -8914,8 +8914,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1433.4609
-        y: 513.03906
+        x: 1424
+        y: 448
         width: 100
         height: 32
       isBreakpoint: 0
@@ -9045,8 +9045,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1047.4297
-        y: 590.3281
+        x: 1040
+        y: 544
         width: 112.4
         height: 32
       isBreakpoint: 0
@@ -9131,8 +9131,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1251.6406
-        y: 596.7969
+        x: 1248
+        y: 544
         width: 100
         height: 32
       isBreakpoint: 0
@@ -9310,8 +9310,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1440.2188
-        y: 599.5469
+        x: 1424
+        y: 544
         width: 102.8
         height: 32
       isBreakpoint: 0
@@ -9441,8 +9441,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 856.8672
-        y: 496.85938
+        x: 864
+        y: 448
         width: 100
         height: 32
       isBreakpoint: 0
@@ -9536,8 +9536,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 880.9297
-        y: 590.375
+        x: 864
+        y: 544
         width: 100
         height: 32
       isBreakpoint: 0
@@ -9632,7 +9632,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1792
-        y: 480
+        y: 464
         width: 100.4
         height: 16
       isBreakpoint: 0
@@ -9851,7 +9851,7 @@ MonoBehaviour:
       - useVariable: 1
         name: height/max
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         value: 2
       - useVariable: 1
@@ -9905,7 +9905,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -10537,7 +10537,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -14036,7 +14036,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -14565,7 +14565,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -15507,7 +15507,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -15959,7 +15959,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -16858,7 +16858,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -17105,7 +17105,7 @@ MonoBehaviour:
     ResetVariablesOnEnable: 0
     EnableDebugFlow: 0
     EnableBreakpoints: 1
-    editorFlags: 225
+    editorFlags: 224
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
@@ -19238,7 +19238,7 @@ GameObject:
   - component: {fileID: 1269712724}
   - component: {fileID: 1269712726}
   m_Layer: 0
-  m_Name: Image (2)
+  m_Name: 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19597,7 +19597,7 @@ GameObject:
   - component: {fileID: 1373768125}
   - component: {fileID: 1373768127}
   m_Layer: 0
-  m_Name: Image
+  m_Name: 00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20145,7 +20145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -365, y: -281}
+  m_AnchoredPosition: {x: -365, y: -158}
   m_SizeDelta: {x: 13.620377, y: 65.0806}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1421556021

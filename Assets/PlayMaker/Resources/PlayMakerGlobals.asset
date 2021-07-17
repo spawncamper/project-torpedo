@@ -33,6 +33,12 @@ MonoBehaviour:
       showInInspector: 0
       networkSync: 0
       value: 0
+    - useVariable: 1
+      name: int/spawnChance
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 3
     boolVariables:
     - useVariable: 1
       name: isGlobalSoundOn
@@ -114,7 +120,7 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    variableCategoryIDs: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   events:
   - timing/oneSecondTicker
   - spawner/getNextAsteroid
